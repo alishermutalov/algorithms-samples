@@ -21,4 +21,5 @@ class Stack: #it's same with Linked List
     def is_empty(self):
         return self.head is None
     
-     
+    def is_full(self):
+        return False #It means There is no limit
