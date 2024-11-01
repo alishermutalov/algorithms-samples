@@ -18,5 +18,7 @@ class Stack: #it's same with Linked List
         self.head = self.head.next
         return value
     
-        
+    def isEmpty(self):
+        return self.head is None
+    
     
