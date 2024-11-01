@@ -26,3 +26,10 @@ class Stack: #it's same with Linked List
 
     def peek(self):
         return self.head.value
+    
+    def print_all(self):
+        item: Node = self.head
+        while item:
+            print(item.value)
+            item = item.next
+        return
