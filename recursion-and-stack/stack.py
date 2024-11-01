@@ -23,3 +23,6 @@ class Stack: #it's same with Linked List
     
     def is_full(self):
         return False #It means There is no limit
+
+    def peek(self):
+        return self.head.value
