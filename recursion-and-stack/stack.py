@@ -23,10 +23,6 @@ class Stack: #it's same with Linked List
     @property
     def is_empty(self):
         return self.head is None
-    
-    @property
-    def is_full(self):
-        return False #It means There is no limit
 
     @property
     def peek(self):
