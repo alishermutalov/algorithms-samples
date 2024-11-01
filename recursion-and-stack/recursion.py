@@ -10,7 +10,7 @@ count(10) # It will count from 10 to 1
 
 #example 2
 def factorial(x):
-    if x<=1:
+    if x==1:
        return 1
    
     return x*factorial(x-1)
