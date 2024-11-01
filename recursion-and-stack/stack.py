@@ -5,13 +5,14 @@ class Node:
 
 
 class Stack: #it's same with Linked List
-    def __init__(self, head):
-        self.head = head
+    def __init__(self):
+        self.head = None
     
     def push(self, value):
         next = self.head
         self.head = Node(value)
         self.head.next = next
+        return
     
     @property    
     def pop(self):
@@ -38,3 +39,17 @@ class Stack: #it's same with Linked List
             print(item.value)
             item = item.next
         return
+    
+stack_obj = Stack()
+
+stack_obj.push("Monday")
+stack_obj.push("Tuesday")
+stack_obj.push("Wednesday")
+stack_obj.push("Thursday")
+stack_obj.push("Friday")
+stack_obj.push("Saturday")
+stack_obj.push("Sunday")
+
+# stack_obj.print_all
+print(stack_obj.pop)
+print(stack_obj.peek)
