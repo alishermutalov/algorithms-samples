@@ -15,3 +15,12 @@ def sum_list(list:list)->int | float:
         return list.pop(-1) + sum_list(list)
     
 print(sum_list([5,8,12,22]))
+
+#example 3
+def len_arr(array:list)->int:
+    if not array:
+        return 0
+    array.pop()
+    return len_arr(array)+1
+
+print(len_arr([]))
