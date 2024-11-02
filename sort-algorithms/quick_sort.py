@@ -24,3 +24,14 @@ def len_arr(array:list)->int:
     return len_arr(array)+1
 
 print(len_arr([]))
+
+# example 4
+def max_value(array:list)->int | float:
+    if len(array)==1:
+        return array.pop()
+    a = array.pop()
+    b = max_value(array)
+    return a if a>b else b
+
+print(max_value([1,2,3,5,112]))
+    
