@@ -1,5 +1,6 @@
 from typing import List
 
+#Leetcode: 2824. Count Pairs Whose Sum is Less than Target
 def countPairs(nums: List[int], target: int) -> int:
     count = 0
     for i in range(len(nums)):
